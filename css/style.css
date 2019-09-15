@@ -1,0 +1,115 @@
+body {
+  background: snow;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  perspective: 500px;
+  margin-top: 142px;
+}
+
+.hexagram {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.row {
+  width: 72%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 321px;
+
+}
+
+.row p {
+  margin: 0;
+  margin-top: 12px;
+  position: absolute;
+  right: -20px;
+}
+
+.line {
+  width: 100px;
+  height: 25px;
+  margin: 3px;
+  background: snow;
+  border-radius: 2px;
+  transition: background 1.5s ease;
+}
+
+.yin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yin div {
+  width: 45%;
+  height: 25px;
+  background: snow;
+  border-radius: 2px;
+  transition: background 1.5s ease;
+}
+
+.yin .fade-in {
+    background: #333;
+    box-shadow: -2px 3px 4px 0px #333;
+}
+
+.yang {
+  background: #333;
+  box-shadow: -2px 3px 4px 0px #333;
+}
+
+.coin-toss {
+  width: 50px;
+  top: -20px;
+  height: 50px;
+  position: absolute;
+  left: 80px;
+  transition: all 1s ease;
+}
+
+.row-1 .coin-toss {
+
+}
+
+.coin {
+  width: 40px;
+  position: absolute;
+  z-index: 2;
+  transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+  transform: translateZ(400px);
+}
+
+
+/* Our coin classes appended in js for transitions. */
+.coin-drop {
+    transform: translateZ(0px) scale(.7) rotate(45deg);
+}
+
+.grab-coin {
+    transform: translateZ(600px) scale(1) rotate(-45deg);
+}
+/*
+.fade-out {
+  transform: translateZ(600px) translateY(300px);
+} */
+
+/* .coin-1 {
+  top: 9px;
+  left: 9px;
+}
+
+.coin-2 {
+  top:0;
+}
+
+.coin-3 {
+  right: 6px;
+  top: 12px;
+} */
