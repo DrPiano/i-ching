@@ -5,6 +5,11 @@ body {
   padding: 0;
 }
 
+button {
+  display: block;
+  margin: 42px auto;
+}
+
 .table {
   perspective: 500px;
   margin-top: 142px;
